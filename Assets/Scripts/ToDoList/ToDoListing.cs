@@ -42,6 +42,16 @@ public class ToDoListing : MonoBehaviour
             Debug.Log(vector);
         }
     }
+
+    //Deze methode zorgt er voor dat todoitems worden door gestreept.
+    public void CrossOutTodoItems(int index)
+    {
+        var item = list[index];
+        item.Description = "<s>" + item.Description + "<s>";
+        var todoListText = TodoListText[index];
+        var text = todoListText.GetComponent<TMP_Text>();
+        text.text = item.Description;
+    }
 }
 
 public class TodoItems
