@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 148137406912039254}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.15, y: 2, z: 0.861}
-  m_LocalScale: {x: 0.001, y: 0.6, z: 0.45}
+  m_LocalScale: {x: 0.001, y: 1, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5419283311640041914}
@@ -266,6 +266,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ToDoListText
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912879167090325370, guid: ce1dfbb0f90070248bd3d929b50c743a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ce1dfbb0f90070248bd3d929b50c743a, type: 3}

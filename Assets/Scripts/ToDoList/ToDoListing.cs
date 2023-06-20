@@ -13,7 +13,7 @@ public class ToDoListing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        list = new List<TodoItems> { new TodoItems("HelloWorld"), new TodoItems("It May Work"), new TodoItems("It Works?"), new TodoItems("<s>It Works<s>") };
+        list = new List<TodoItems> { new TodoItems("-Groente snijden"), new TodoItems("-Groeten aan de kook brengen"), new TodoItems("-Vlees in de pan"), new TodoItems("-Hou het eten in de gaten") };
         CreateList();
     }
 
@@ -38,7 +38,7 @@ public class ToDoListing : MonoBehaviour
             pos.localScale = new Vector3(1, 0.2f, 0.15f);
             pos.transform.eulerAngles = new Vector3(0,-90,0);
             pos.transform.localPosition = vector;
-            vector.y -= 0.04f;
+            vector.y -= 0.06f;
             Debug.Log(vector);
         }
     }
