@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 845914008393100089}
   - component: {fileID: 845914008393100093}
   - component: {fileID: 845914008393100092}
-  - component: {fileID: 845914008393100094}
+  - component: {fileID: 8310663187420355762}
   - component: {fileID: 845914008393100095}
   m_Layer: 0
   m_Name: Cylinder (3)
@@ -85,16 +85,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &845914008393100094
+--- !u!114 &8310663187420355762
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845914008393100088}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4521e1389af555741a0f8a95b785765a, type: 3}
+  m_Script: {fileID: 11500000, guid: ffc9b94ee5610484fb8ae3a4f0f99c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &845914008393100095
@@ -121,7 +121,7 @@ GameObject:
   - component: {fileID: 845914008411185084}
   - component: {fileID: 845914008411185083}
   - component: {fileID: 845914008411185082}
-  - component: {fileID: 845914008411185085}
+  - component: {fileID: 324982819596719001}
   m_Layer: 0
   m_Name: FakeCarrot
   m_TagString: Untagged
@@ -179,7 +179,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &845914008411185085
+--- !u!114 &324982819596719001
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,15 +188,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 845914008411185081}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b8dced60e544649a854216038e3d55, type: 3}
+  m_Script: {fileID: 11500000, guid: bd5baed00b5d2af4a9c6f3aae9f341e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  carrotList:
-  - {fileID: 845914009533922047}
-  - {fileID: 845914008953434434}
-  - {fileID: 845914009923296201}
-  - {fileID: 845914008393100088}
-  - {fileID: 845914009949150354}
+  carrotList: []
 --- !u!1 &845914008953434434
 GameObject:
   m_ObjectHideFlags: 0
@@ -208,7 +203,7 @@ GameObject:
   - component: {fileID: 845914008953434435}
   - component: {fileID: 845914008953434439}
   - component: {fileID: 845914008953434438}
-  - component: {fileID: 845914008953434456}
+  - component: {fileID: 6457861781106608546}
   - component: {fileID: 845914008953434457}
   m_Layer: 0
   m_Name: Cylinder (1)
@@ -282,16 +277,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &845914008953434456
+--- !u!114 &6457861781106608546
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845914008953434434}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4521e1389af555741a0f8a95b785765a, type: 3}
+  m_Script: {fileID: 11500000, guid: ffc9b94ee5610484fb8ae3a4f0f99c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &845914008953434457
@@ -318,7 +313,7 @@ GameObject:
   - component: {fileID: 845914009533922032}
   - component: {fileID: 845914009533922036}
   - component: {fileID: 845914009533922035}
-  - component: {fileID: 845914009533922037}
+  - component: {fileID: 1882357083284529069}
   - component: {fileID: 845914009533922038}
   m_Layer: 0
   m_Name: Cylinder
@@ -392,16 +387,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &845914009533922037
+--- !u!114 &1882357083284529069
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845914009533922047}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4521e1389af555741a0f8a95b785765a, type: 3}
+  m_Script: {fileID: 11500000, guid: ffc9b94ee5610484fb8ae3a4f0f99c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &845914009533922038
@@ -428,7 +423,7 @@ GameObject:
   - component: {fileID: 845914009923296202}
   - component: {fileID: 845914009923296206}
   - component: {fileID: 845914009923296205}
-  - component: {fileID: 845914009923296207}
+  - component: {fileID: 9141949515150779108}
   - component: {fileID: 845914009923296192}
   m_Layer: 0
   m_Name: Cylinder (2)
@@ -502,16 +497,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &845914009923296207
+--- !u!114 &9141949515150779108
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845914009923296201}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4521e1389af555741a0f8a95b785765a, type: 3}
+  m_Script: {fileID: 11500000, guid: ffc9b94ee5610484fb8ae3a4f0f99c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &845914009923296192
@@ -538,7 +533,7 @@ GameObject:
   - component: {fileID: 845914009949150355}
   - component: {fileID: 845914009949150359}
   - component: {fileID: 845914009949150358}
-  - component: {fileID: 845914009949150376}
+  - component: {fileID: 1556985734204972243}
   - component: {fileID: 845914009949150377}
   m_Layer: 0
   m_Name: Cylinder (4)
@@ -612,16 +607,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &845914009949150376
+--- !u!114 &1556985734204972243
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 845914009949150354}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4521e1389af555741a0f8a95b785765a, type: 3}
+  m_Script: {fileID: 11500000, guid: ffc9b94ee5610484fb8ae3a4f0f99c44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &845914009949150377
