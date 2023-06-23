@@ -27,5 +27,6 @@ public class CrossOutTodoList : MonoBehaviour
     {
         var script = TodoList.GetComponent<ToDoListing>();
         script.CrossOutTodoItems(IndexTodoItem);
+        Debug.Log("CrossOutWord");
     }
 }
