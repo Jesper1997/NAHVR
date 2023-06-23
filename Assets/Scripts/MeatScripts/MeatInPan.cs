@@ -21,6 +21,7 @@ public class MeatInPan : MonoBehaviour
         if(other.gameObject.name == "Meat")
         {
             GetComponent<CrossOutTodoList>().CrossoutWord();
+            other.GetComponent<ChangeColor>().enabled = true;
         }
     }
 }
