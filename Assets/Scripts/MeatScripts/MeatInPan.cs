@@ -22,6 +22,16 @@ public class MeatInPan : MonoBehaviour
         {
             GetComponent<CrossOutTodoList>().CrossoutWord();
             other.GetComponent<ChangeColor>().enabled = true;
+            GetComponent<PlaayCookingSounds>().PlaySound = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.name == "Meat")
+        {
+            other.GetComponent<ChangeColor>().enabled = false;
+            other.GetComponent<PlaayCookingSounds>().PlaySound = false;
         }
     }
 }
