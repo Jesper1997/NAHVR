@@ -38,7 +38,7 @@ public class ToDoListing : MonoBehaviour
             pos.localScale = new Vector3(1, 0.2f, 0.15f);
             pos.transform.eulerAngles = new Vector3(0,-90,0);
             pos.transform.localPosition = vector;
-            vector.y -= 0.06f;
+            vector.y -= 0.12f;
             Debug.Log(vector);
         }
     }
