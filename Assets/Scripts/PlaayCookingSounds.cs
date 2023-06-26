@@ -17,7 +17,6 @@ public class PlaayCookingSounds : MonoBehaviour
     {
         if(PlaySound)
         {
-            Debug.Log(Source.isPlaying);
             if(!Source.isPlaying)
             {
                 Source.Play();

@@ -25,7 +25,6 @@ public class ChangeColor : MonoBehaviour
         {
             tick+= Time.deltaTime * speed;
             mat.color = Color.Lerp(mat.color, Color.grey,tick);
-            Debug.Log(mat.color);
             yield return null;
         }
     }
