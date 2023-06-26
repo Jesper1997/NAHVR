@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class DestroyTheCarrot : MonoBehaviour
 {
@@ -19,16 +20,18 @@ public class DestroyTheCarrot : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(other.name);
         if(other.gameObject.name == "knife")
         {
+            Debug.Log("HelloWorld");
             foreach(GameObject carrotpart in carrotList) 
             {
                 carrotpart.GetComponent<AddRigidbody>().enabled = true;
             }
             gameObject.GetComponent<CapsuleCollider>().enabled = false;
+            Destroy(GetComponent<XRGrabInteractable>());
             Destroy(GetComponent<Rigidbody>());
+            
+            gameObject.GetComponent<CrossOutTodoList>().CrossoutWord();
         }
-
     }
 }

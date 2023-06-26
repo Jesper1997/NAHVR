@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
 
 public class AddRigidbody : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class AddRigidbody : MonoBehaviour
     {
         gameObject.AddComponent<Rigidbody>();
         gameObject.GetComponent<Rigidbody>().drag = 1;
+        gameObject.AddComponent<XRGrabInteractable>();
     }
 
     // Update is called once per frame
