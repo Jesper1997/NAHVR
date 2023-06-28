@@ -13,7 +13,7 @@ public class ToDoListing : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        list = new List<TodoItems> { new TodoItems("-Groente snijden"), new TodoItems("-Groeten aan de kook brengen"), new TodoItems("-Vlees in de pan"), new TodoItems("-Plaats het eten op het boord") };
+        list = new List<TodoItems> { new TodoItems("-Groente snijden"), new TodoItems("-Groeten aan de kook brengen"), new TodoItems("-Vlees in de pan"), new TodoItems("-Plaats het eten op het bord") };
         CreateList();
     }
 

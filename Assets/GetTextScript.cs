@@ -10,6 +10,8 @@ public class GetTextScript : MonoBehaviour
     private ToDoListing ToDoListing;
     public int todolist_index1 = 1;
     public int todolist_index2 = 2;
+    public Material screenoff;
+    public Material screenon;
     public AudioClip ringtone;
     public AudioClip phonecallaudio1;
     public AudioClip phonecallaudio2;
@@ -26,7 +28,7 @@ public class GetTextScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((ToDoListing.list[todolist_index1].Description.Contains("<s>")) && (phonecall != 1))
+        if ((ToDoListing.list[todolist_index1].Description.Contains("<s>")) && (phonecall != 1) && (!phonecall1))
         {
             //Execution methode
             Debug.Log(ToDoListing.list[todolist_index1].Description);
@@ -34,9 +36,10 @@ public class GetTextScript : MonoBehaviour
             phonecall = 1;
             phoneSpeaker.clip = ringtone;
             phoneSpeaker.Play();
+            var mat = gameObject.GetComponent<Renderer>().materials[1] = screenon;
         }
 
-        if ((ToDoListing.list[todolist_index2].Description.Contains("<s>")) && (phonecall != 2))
+        if ((ToDoListing.list[todolist_index2].Description.Contains("<s>")) && (phonecall != 2) && (!phonecall2))
         {
             //Execution methode
             Debug.Log(ToDoListing.list[todolist_index2].Description);
@@ -44,6 +47,7 @@ public class GetTextScript : MonoBehaviour
             phonecall = 2;
             phoneSpeaker.clip = ringtone;
             phoneSpeaker.Play();
+            var mat = gameObject.GetComponent<Renderer>().materials[1] = screenon;
         }
     }
 
@@ -55,6 +59,7 @@ public class GetTextScript : MonoBehaviour
             phoneSpeaker.loop = false;
             phoneSpeaker.Play();
             phonecall1 = true;
+            var mat = gameObject.GetComponent<Renderer>().materials[1] = screenoff;
         }
         if ((phonecall == 2) && (!phonecall2))
         {
@@ -62,6 +67,7 @@ public class GetTextScript : MonoBehaviour
             phoneSpeaker.loop = false;
             phoneSpeaker.Play();
             phonecall2 = true;
+            var mat = gameObject.GetComponent<Renderer>().materials[1] = screenoff;
         }
     }
 }

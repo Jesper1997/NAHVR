@@ -9,7 +9,7 @@ public class EverthingOnBoard : MonoBehaviour
 
     private void Update()
     {
-        if(_carrotCount == 10 && _MeatOnboard)
+        if(_carrotCount >= 8 && _MeatOnboard)
         {
             gameObject.GetComponent<CrossOutTodoList>().CrossoutWord();
         }
